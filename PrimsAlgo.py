@@ -14,7 +14,7 @@ def krushkal(graph):
                 for child,wt in graph[node]:
                     if child not in visited:
                         heappush(heap,(wt,child,node))
-        ans.sort(key= lambda x: x[1])
+        #ans.sort(key= lambda x: x[1])
         for edge, weight in ans:
             print(edge," : ",weight)
         
