@@ -1,6 +1,6 @@
 from heapq import *
 
-def krushkal(graph):
+def prims(graph):
         visited = set()
         source = 0
         heap= [(0,source, source)]
@@ -26,4 +26,4 @@ graph = {
     4: [(1, 5), (2, 7), (3, 9)]
 }
 
-krushkal(graph)
+prims(graph)
